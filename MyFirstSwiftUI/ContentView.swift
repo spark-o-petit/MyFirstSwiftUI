@@ -61,20 +61,34 @@ struct ContentView: View {
 //    .frame(width: 300, height: 200)
 //    .background(.orange)
     
-    ScrollView(.horizontal) {
+//    ScrollView(.horizontal) {
+//      HStack {
+//        Text("Hello World!")
+//          .frame(width: 300, height: 500)
+//          .background(.orange)
+//        Text("Hello World!")
+//          .frame(width: 300, height: 500)
+//          .background(.green)
+//        Text("Hello World!")
+//          .frame(width: 300, height: 500)
+//          .background(.blue)
+//      }
+//    }
+    
+    List {
       HStack {
-        Text("Hello World!")
-          .frame(width: 300, height: 500)
-          .background(.orange)
-        Text("Hello World!")
-          .frame(width: 300, height: 500)
-          .background(.green)
-        Text("Hello World!")
-          .frame(width: 300, height: 500)
-          .background(.blue)
+        Image(systemName: "star")
+        Text("Alex")
+      }
+      HStack {
+        Image(systemName: "circle")
+        Text("Rama")
+      }
+      HStack {
+        Image(systemName: "bolt")
+        Text("Vicky")
       }
     }
-    
     
   }
 }
