@@ -76,17 +76,42 @@ struct ContentView: View {
 //    }
     
     List {
-      HStack {
-        Image(systemName: "star")
-        Text("Alex")
+      Section {
+        HStack {
+          Image(systemName: "star")
+          Text("Alex")
+        }
+        HStack {
+          Image(systemName: "circle")
+          Text("Rama")
+        }
+        HStack {
+          Image(systemName: "bolt")
+          Text("Vicky")
+        }
+      } header: {
+        Text("Marshee!")
+      } footer: {
+        Text("Hello World!")
       }
-      HStack {
-        Image(systemName: "circle")
-        Text("Rama")
-      }
-      HStack {
-        Image(systemName: "bolt")
-        Text("Vicky")
+      
+      Section {
+        HStack {
+          Image(systemName: "star")
+          Text("Alex")
+        }
+        HStack {
+          Image(systemName: "circle")
+          Text("Rama")
+        }
+        HStack {
+          Image(systemName: "bolt")
+          Text("Vicky")
+        }
+      } header: {
+        Text("Marshee!")
+      } footer: {
+        Text("Hello World!")
       }
     }
     
