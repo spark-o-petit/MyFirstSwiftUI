@@ -40,13 +40,18 @@ struct ContentView: View {
 //        .font(.system(size: 30, weight: .bold))
 //    }
     
-    Image("swiftui")
+//    Image("swiftui")
+//      .resizable()
+//      .frame(width: 200, height: 200)
+//      .aspectRatio(contentMode: .fill)
+//      .clipped()
+//      .background(.orange)
+//      .border(.blue, width: 2)
+    
+    Image(systemName: "sun.min")
       .resizable()
-      .frame(width: 200, height: 200)
-      .aspectRatio(contentMode: .fill)
-      .clipped()
-      .background(.orange)
-      .border(.blue, width: 2)
+      .aspectRatio(contentMode: .fit)
+      .frame(width: 50, height: 50)
     
   }
 }
