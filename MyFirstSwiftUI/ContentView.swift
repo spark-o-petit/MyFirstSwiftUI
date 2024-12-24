@@ -48,11 +48,18 @@ struct ContentView: View {
 //      .background(.orange)
 //      .border(.blue, width: 2)
     
-    Image(systemName: "sun.min")
-      .resizable()
-      .aspectRatio(contentMode: .fit)
-      .frame(width: 50, height: 50)
-    
+//    Image(systemName: "sun.min")
+//      .resizable()
+//      .aspectRatio(contentMode: .fit)
+//      .frame(width: 50, height: 50)
+  
+    VStack(alignment: .leading) {
+      Text("1")
+      Text("2")
+      Text("3")
+    }
+    .frame(width: 300, height: 200)
+    .background(.orange)
   }
 }
 
