@@ -8,17 +8,42 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+  var body: some View {
+    
+//    Button {
+//      print("Hello World!")
+//    } label: {
+//      Text("Hello World!")
+//        .padding()
+//        .frame(width: 150)
+//        .background(.purple)
+//        .cornerRadius(10)
+//    }
+  
+//    Button("Delete", role: .destructive) {
+//      print("deleted!")
+//    }
+    
+    VStack {
+      Text("Hello World!")
+        .bold()
+        .italic()
+        .strikethrough()
+      Text("Hello World!")
+        .font(.system(size: 30))
+      Text("Hello World!")
+        .underline(color: .orange)
+        .foregroundColor(.green)
+        .background(.purple)
+      Text("Hello World!")
+        .foregroundColor(.green)
+        .font(.system(size: 30, weight: .bold))
     }
+    
+    
+  }
 }
 
 #Preview {
-    ContentView()
+  ContentView()
 }
