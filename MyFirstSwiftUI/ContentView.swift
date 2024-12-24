@@ -53,13 +53,29 @@ struct ContentView: View {
 //      .aspectRatio(contentMode: .fit)
 //      .frame(width: 50, height: 50)
   
-    VStack(alignment: .leading) {
-      Text("1")
-      Text("2")
-      Text("3")
+//    VStack(alignment: .leading) {
+//      Text("1")
+//      Text("2")
+//      Text("3")
+//    }
+//    .frame(width: 300, height: 200)
+//    .background(.orange)
+    
+    ScrollView(.horizontal) {
+      HStack {
+        Text("Hello World!")
+          .frame(width: 300, height: 500)
+          .background(.orange)
+        Text("Hello World!")
+          .frame(width: 300, height: 500)
+          .background(.green)
+        Text("Hello World!")
+          .frame(width: 300, height: 500)
+          .background(.blue)
+      }
     }
-    .frame(width: 300, height: 200)
-    .background(.orange)
+    
+    
   }
 }
 
