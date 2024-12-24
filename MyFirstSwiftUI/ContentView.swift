@@ -24,22 +24,29 @@ struct ContentView: View {
 //      print("deleted!")
 //    }
     
-    VStack {
-      Text("Hello World!")
-        .bold()
-        .italic()
-        .strikethrough()
-      Text("Hello World!")
-        .font(.system(size: 30))
-      Text("Hello World!")
-        .underline(color: .orange)
-        .foregroundColor(.green)
-        .background(.purple)
-      Text("Hello World!")
-        .foregroundColor(.green)
-        .font(.system(size: 30, weight: .bold))
-    }
+//    VStack {
+//      Text("Hello World!")
+//        .bold()
+//        .italic()
+//        .strikethrough()
+//      Text("Hello World!")
+//        .font(.system(size: 30))
+//      Text("Hello World!")
+//        .underline(color: .orange)
+//        .foregroundColor(.green)
+//        .background(.purple)
+//      Text("Hello World!")
+//        .foregroundColor(.green)
+//        .font(.system(size: 30, weight: .bold))
+//    }
     
+    Image("swiftui")
+      .resizable()
+      .frame(width: 200, height: 200)
+      .aspectRatio(contentMode: .fill)
+      .clipped()
+      .background(.orange)
+      .border(.blue, width: 2)
     
   }
 }
