@@ -115,21 +115,28 @@ struct ContentView: View {
     //      }
     //
     
-    VStack {
-      Image(systemName: "bolt")
-        .resizable()
-        .frame(width: 200)
-        .aspectRatio(contentMode: .fit)
-      Spacer()
-      Text("Bolt!")
-      Spacer()
-      Button {
-        print("Blink!")
-      } label: {
-        Text("Hit!")
-      }
-      
-    }
+//    VStack {
+//      Image(systemName: "bolt")
+//        .resizable()
+//        .frame(width: 200)
+//        .aspectRatio(contentMode: .fit)
+//      Spacer()
+//      Text("Bolt!")
+//      Spacer()
+//      Button {
+//        print("Blink!")
+//      } label: {
+//        Text("Hit!")
+//      }
+//      
+//    }
+    
+    Color(.blue)
+      .frame(width: 300, height: 200)
+      .clipShape(RoundedRectangle(cornerRadius: 30))
+    
+    
+    
   }
 }
 
