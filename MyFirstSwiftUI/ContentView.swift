@@ -140,8 +140,13 @@ struct ContentView: View {
 }
 
 struct MyView: View {
+  @State var name: String = ""
+  
   var body: some View {
-    Text("Hi Alex")
+    VStack {
+      TextField("Enter your name", text: $name)
+      Text("Hello, \(name)!")
+    }
   }
 }
 
