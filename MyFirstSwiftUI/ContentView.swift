@@ -135,20 +135,26 @@ struct ContentView: View {
 //      .frame(width: 300, height: 200)
 //      .clipShape(RoundedRectangle(cornerRadius: 30))
     
-    MyView()
+    Image(systemName: "bolt")
+      .resizable()
+      .aspectRatio(contentMode: .fit)
+      .frame(width: 100)
+      .background(.green)
+      .foregroundColor(.orange)
+    
   }
 }
 
-struct MyView: View {
-  @State var name: String = ""
-  
-  var body: some View {
-    VStack {
-      TextField("Enter your name", text: $name)
-      Text("Hello, \(name)!")
-    }
-  }
-}
+//struct MyView: View {
+//  @State var name: String = ""
+//  
+//  var body: some View {
+//    VStack {
+//      TextField("Enter your name", text: $name)
+//      Text("Hello, \(name)!")
+//    }
+//  }
+//}
 
 #Preview {
   ContentView()
