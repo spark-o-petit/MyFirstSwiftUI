@@ -131,12 +131,17 @@ struct ContentView: View {
 //      
 //    }
     
-    Color(.blue)
-      .frame(width: 300, height: 200)
-      .clipShape(RoundedRectangle(cornerRadius: 30))
+//    Color(.blue)
+//      .frame(width: 300, height: 200)
+//      .clipShape(RoundedRectangle(cornerRadius: 30))
     
-    
-    
+    MyView()
+  }
+}
+
+struct MyView: View {
+  var body: some View {
+    Text("Hi Alex")
   }
 }
 
