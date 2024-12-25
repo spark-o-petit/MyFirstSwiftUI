@@ -135,23 +135,29 @@ struct ContentView: View {
 //      .frame(width: 300, height: 200)
 //      .clipShape(RoundedRectangle(cornerRadius: 30))
 
-    VStack {
-      Image(systemName: "bolt")
-        .resizable()
-        .aspectRatio(contentMode: .fit)
-        .frame(width: 100)
-        .padding(.bottom, 100)
-        .background(.green)
-        .foregroundColor(.orange)
-
-      Image(systemName: "bolt")
-        .resizable()
-        .aspectRatio(contentMode: .fit)
-        .frame(width: 100)
-        .padding(.leading, 100)
-        .background(.green)
-        .foregroundColor(.orange)
-    }
+//    VStack {
+//      Image(systemName: "bolt")
+//        .resizable()
+//        .aspectRatio(contentMode: .fit)
+//        .frame(width: 100)
+//        .padding(.bottom, 100)
+//        .background(.green)
+//        .foregroundColor(.orange)
+//
+//      Image(systemName: "bolt")
+//        .resizable()
+//        .aspectRatio(contentMode: .fit)
+//        .frame(width: 100)
+//        .padding(.leading, 100)
+//        .background(.green)
+//        .foregroundColor(.orange)
+//    }
+    
+    Image(systemName: "bolt")
+      .resizable()
+      .aspectRatio(contentMode: .fit)
+      .frame(width: 300, height: 200)
+      .background(Color.blue)
   }
 }
 
