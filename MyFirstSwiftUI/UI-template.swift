@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct MyToggle {
+struct MyOwnFunction {
   var body: some View {
-    
+    Text("Hello, world!")
   }
   
 }
 
 #Preview {
-  MyToggle()
+  MyOwnFunction()
 }
