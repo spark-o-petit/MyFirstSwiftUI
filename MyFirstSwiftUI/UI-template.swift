@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MyOwnFunction {
+struct MyOwnFunction: View {
   var body: some View {
     Text("Hello, world!")
   }
